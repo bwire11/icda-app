@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | ICDA Africa</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join our movement to improve oral health across Africa. Whether you're a dental professional, volunteer, supporter, or advocate, there are multiple ways to contribute.">
+    <meta name="keywords" content="ICDA Africa, Join Us, Dental Volunteers, Healthcare Advocacy, Oral Health Programs">
+    <meta name="author" content="ICDA Africa">
+    <meta property="og:title" content="Join Us | ICDA Africa">
+    <meta property="og:description" content="Join our movement to improve oral health across Africa through outreach and professional training.">
+    <meta property="og:image" content="images/hero-join.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Fade-in scroll animations */
+        .fade-in-element,
+        .fade-in-item {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-in-element.visible,
+        .fade-in-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Floating background icons */
+        .floating-bg-icons {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .float-icon {
+            position: absolute;
+            font-size: 60px;
+            opacity: 0.08;
+            animation: floatBg 8s ease-in-out infinite;
+        }
+
+        @keyframes floatBg {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container nav-container">
+        <img src="images/logo.png" class="logo" alt="ICDA Logo">
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html">Home</a>
+            
+            <div class="nav-dropdown">
+                <a href="about.html">About Us</a>
+                <div class="dropdown-menu">
+                    <a href="about.html#history">Our History</a>
+                    <a href="about.html#mission">Mission & Vision</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a href="work.html">Our Work</a>
+                <div class="dropdown-menu">
+                    <a href="work.html#advocacy">Our Health Advocacy</a>
+                    <a href="work.html#community">Community Outreach</a>
+                    <a href="work.html#clinical">Clinical Standards</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a href="resources.html">Resources</a>
+                <div class="dropdown-menu">
+                    <a href="resources.html#publications">Publications</a>
+                    <a href="resources.html#guidelines">Practice Guidelines</a>
+                </div>
+            </div>
+
+            <a href="blog.html">Blog & Vlog</a>
+            <a href="join.html" class="btn-secondary">Join</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero" style="background-image: url('images/hero-join.jpg');">
+    <h1>Join Our Movement</h1>
+</section>
+
+<!-- Floating Background Icons -->
+<div class="floating-bg-icons">
+    <div class="float-icon" style="top: 10%; left: 5%; animation-delay: 0s;">🦷</div>
+    <div class="float-icon" style="top: 20%; right: 8%; animation-delay: 1s;">💚</div>
+    <div class="float-icon" style="top: 60%; left: 3%; animation-delay: 2s;">🏥</div>
+    <div class="float-icon" style="top: 70%; right: 5%; animation-delay: 1.5s;">✨</div>
+    <div class="float-icon" style="top: 40%; left: 8%; animation-delay: 2.5s;">👥</div>
+</div>
+
+<!-- Join Section -->
+<section class="join-section">
+    <div class="container">
+        <div class="join-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="join-left fade-in-element" data-index="0">
+                <h2 class="fade-in-item">Join Our Movement for Better Oral Health in Africa</h2>
+
+                <p class="join-subtitle fade-in-item">
+                    Whether you're a dental professional, healthcare advocate, or concerned citizen, 
+                    there are multiple ways to contribute to our mission of transforming oral healthcare across the continent.
+                </p>
+
+                <div class="join-options">
+
+                    <div class="join-option fade-in-item" data-index="0">
+                        <div class="join-icon animate-icon">🩺</div>
+                        <div>
+                            <h3>For Professionals</h3>
+                            <p>Join our network and access resources, training programs, and collaboration opportunities with dental professionals across Africa.</p>
+                        </div>
+                    </div>
+
+                    <div class="join-option fade-in-item" data-index="1">
+                        <div class="join-icon animate-icon">🤝</div>
+                        <div>
+                            <h3>For Volunteers</h3>
+                            <p>Participate in community outreach programs, dental camps, and health education initiatives in underserved communities.</p>
+                        </div>
+                    </div>
+
+                    <div class="join-option fade-in-item" data-index="2">
+                        <div class="join-icon animate-icon">💙</div>
+                        <div>
+                            <h3>For Supporters</h3>
+                            <p>Fund our initiatives and programs to expand oral health services and reach more communities across Africa.</p>
+                        </div>
+                    </div>
+
+                    <div class="join-option fade-in-item" data-index="3">
+                        <div class="join-icon animate-icon">📣</div>
+                        <div>
+                            <h3>For Advocates</h3>
+                            <p>Help spread awareness about oral health issues and our mission in your community and professional networks.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="join-form-card fade-in-element" data-index="1">
+                <h2>Get Involved Today</h2>
+                <p class="form-subtitle">Fill out the form below and we'll be in touch with you shortly.</p>
+
+                <form id="joinForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="helpType">How Would You Like to Help? *</label>
+                        <select id="helpType" name="helpType" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="professional-network">Join as a Healthcare Professional</option>
+                            <option value="volunteer-outreach">Volunteer for Outreach Programs</option>
+                            <option value="financial-support">Provide Financial Support</option>
+                            <option value="advocacy-awareness">Advocate & Spread Awareness</option>
+                            <option value="internship">Explore Internship Opportunities</option>
+                            <option value="partnership">Organizational Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell Us About Yourself *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Share your background, experience, and why you want to join our mission..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-join-submit">Get Involved</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+
+                <p class="form-privacy">We respect your privacy. Your information will be kept confidential and only used to contact you about our programs.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 ICDA Africa. All rights reserved. Transforming Oral Health Across Africa.</p>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+    // Join page form handling and animations
+    document.addEventListener('DOMContentLoaded', function() {
+        const joinForm = document.getElementById('joinForm');
+        if (joinForm) {
+            joinForm.addEventListener('submit', handleJoinSubmit);
+        }
+        
+        // Initialize fade-in animations on scroll
+        initializeFadeInAnimations();
+    });
+
+    async function handleJoinSubmit(e) {
+        e.preventDefault();
+        
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            helpType: document.getElementById('helpType').value,
+            message: document.getElementById('message').value,
+            subject: `New Join Request: ${document.getElementById('helpType').options[document.getElementById('helpType').selectedIndex].text}`
+        };
+        
+        const messageDiv = document.getElementById('formMessage');
+        messageDiv.innerHTML = '<p class="loading">Sending your message...</p>';
+        
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                messageDiv.innerHTML = '<p class="success">✓ Thank you! We\'ve received your message and will be in touch soon.</p>';
+                document.getElementById('joinForm').reset();
+                setTimeout(() => {
+                    messageDiv.innerHTML = '';
+                }, 5000);
+            } else {
+                messageDiv.innerHTML = '<p class="error">✗ There was an error. Please try again or contact us directly.</p>';
+            }
+        } catch (error) {
+            messageDiv.innerHTML = '<p class="error">✗ Connection error. Please try again later.</p>';
+            console.error('Form submission error:', error);
+        }
+    }
+
+    function initializeFadeInAnimations() {
+        const fadeElements = document.querySelectorAll('.fade-in-element');
+        const fadeItems = document.querySelectorAll('.fade-in-item');
+        
+        if (fadeElements.length === 0) return;
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        fadeElements.forEach(el => fadeObserver.observe(el));
+        
+        const itemObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = entry.target.dataset.index || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    itemObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        fadeItems.forEach(item => itemObserver.observe(item));
+    }
+</script>
+
+</body>
+</html>

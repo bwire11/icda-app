@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - ICDA Africa</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="ICDA Africa is committed to improving oral health systems and expanding access to quality dental care services across Africa.">
+<meta name="keywords" content="ICDA Africa, Dental Outreach, Oral Health Africa, Dental NGO, Community Dental Programs">
+<meta name="author" content="ICDA Africa">
+<meta property="og:title" content="ICDA Africa">
+<meta property="og:description" content="Improving oral health across Africa through outreach and professional training.">
+<meta property="og:image" content="https://yourdomain.com/images/hero-home.jpg">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<section class="page-hero" style="background-image:url('images/hero-contact.jpg')">
+  <h1>Contact Us</h1>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required id="name">
+      <input type="email" placeholder="Your Email" required id="email">
+      <textarea placeholder="Your Message" required id="message"></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const response = await fetch("/api/send-email", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: name.value,
+      email: email.value,
+      message: message.value
+    })
+  });
+
+  if (response.ok) {
+    alert("Message sent successfully!");
+  } else {
+    alert("Error sending message.");
+  }
+});
+</script>
+
+</body>
+</html>

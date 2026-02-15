@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate - ICDA Africa</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="ICDA Africa is committed to improving oral health systems and expanding access to quality dental care services across Africa.">
+<meta name="keywords" content="ICDA Africa, Dental Outreach, Oral Health Africa, Dental NGO, Community Dental Programs">
+<meta name="author" content="ICDA Africa">
+<meta property="og:title" content="ICDA Africa">
+<meta property="og:description" content="Improving oral health across Africa through outreach and professional training.">
+<meta property="og:image" content="https://yourdomain.com/images/hero-home.jpg">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+</head>
+<body>
+
+<section class="page-hero" style="background-image:url('images/hero-donate.jpg')">
+    <h1>Support Our Mission</h1>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Make a Donation</h2>
+        <p>Your support helps us expand access to dental care across Africa.</p>
+
+        <div id="paypal-button-container"></div>
+    </div>
+</section>
+
+<script>
+paypal.Buttons({
+    createOrder: (data, actions) => {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: "20.00", // $20 donation
+                    currency_code: "USD"
+                },
+                description: "Donation to ICDA Africa"
+            }]
+        });
+    },
+    onApprove: (data, actions) => {
+        return actions.order.capture().then((details) => {
+            // Call backend to verify and process donation
+            return fetch("/api/paypal-webhook", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    orderID: data.orderID,
+                    email: details.payer.email_address,
+                    name: details.payer.name.given_name + " " + details.payer.name.surname,
+                    amount: "20.00"
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert("Thank you for your donation! Transaction ID: " + data.transactionID);
+                window.location.href = "/success.html";
+            });
+        });
+    },
+    onError: (err) => {
+        console.error("PayPal error:", err);
+        alert("An error occurred during payment. Please try again.");
+    }
+}).render("#paypal-button-container");
+</script>
+
+<script src="js/animations.js"></script>
+</body>
+</html>
