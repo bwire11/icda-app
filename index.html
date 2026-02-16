@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICDA Africa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ICDA Africa is committed to improving oral health systems and expanding access to quality dental care services across Africa.">
+    <meta name="keywords" content="ICDA Africa, Dental Outreach, Oral Health Africa, Dental NGO, Community Dental Programs">
+    <meta name="author" content="ICDA Africa">
+    <meta property="og:title" content="ICDA Africa">
+    <meta property="og:description" content="Improving oral health across Africa through outreach and professional training.">
+    <meta property="og:image" content="images/hero-home.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="icda-africa/CSS/styles.css">
+    <style>
+        /* Fade-in scroll animations for home page */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-card {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in-card.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container nav-container">
+        <img src="icda-africa/images/logo.png" class="logo" alt="ICDA Logo">
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html">Home</a>
+            
+            <div class="nav-dropdown">
+                <a href="about.html">About Us</a>
+                <div class="dropdown-menu">
+                    <a href="about.html#history">Our History</a>
+                    <a href="about.html#mission">Mission & Vision</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a href="work.html">Our Work</a>
+                <div class="dropdown-menu">
+                    <a href="work.html#advocacy">Our Health Advocacy</a>
+                    <a href="work.html#community">Community Outreach</a>
+                    <a href="work.html#clinical">Clinical Standards</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a href="resources.html">Resources</a>
+                <div class="dropdown-menu">
+                    <a href="resources.html#publications">Publications</a>
+                    <a href="resources.html#guidelines">Practice Guidelines</a>
+                </div>
+            </div>
+
+            <a href="blog.html">Blog & Vlog</a>
+            <a href="join.html" class="btn-secondary">Join</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+</header>
+
+<!-- Hero (updated) -->
+<section class="hero-modern" id="home-hero">
+  <div class="container hero-grid">
+
+    <!-- Left Content -->
+    <div class="hero-text">
+      <h1>Advancing Oral Health Across Africa</h1>
+      <p>
+        Empowering communities through professional dental outreach,
+        education, and sustainable healthcare systems.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="donate.html" class="btn-primary">Donate Now</a>
+        <a href="work.html" class="btn-secondary-outline">Our Work</a>
+      </div>
+
+      <div class="floating-stats" aria-live="polite">
+        <div class="stat-card" role="group" aria-label="Patients served">
+          <h3><span class="count" data-target="10000">0</span>+</h3>
+          <p>Patients Served</p>
+        </div>
+        <div class="stat-card" role="group" aria-label="Countries reached">
+          <h3><span class="count" data-target="15">0</span>+</h3>
+          <p>Countries Reached</p>
+        </div>
+        <div class="stat-card" role="group" aria-label="Volunteers">
+          <h3><span class="count" data-target="50">0</span>+</h3>
+          <p>Volunteers</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+      <img src="icda-africa/images/hero-home.jpg" alt="Dental outreach">
+    </div>
+
+  </div>
+
+  <!-- curved divider SVG -->
+  <svg class="hero-divider" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z" fill="var(--accent);"></path>
+  </svg>
+</section>
+
+<!-- About Section -->
+<section class="section fade-in-section" id="about-section">
+    <div class="container">
+        <h2>Promoting Oral Health Across Africa</h2>
+        <p>
+            Building a unified community of dental professionals and advocates to transform oral healthcare through education, research, and primary healthcare approaches. We are committed to strengthening oral health systems and expanding access to quality dental care services across Africa.
+        </p>
+    </div>
+</section>
+
+<!-- Programs -->
+<section class="section bg-light fade-in-section" id="programs-section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 10px;">Transforming Oral Healthcare in Africa</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Comprehensive programs designed to address oral health challenges through advocacy, education, research, and community engagement across the continent.</p>
+        <h3 style="text-align: center; margin-bottom: 40px;">Our Key Initiatives</h3>
+        <div class="initiatives-grid">
+            <div class="initiative-card fade-in-card" data-index="0">
+                <div class="card-image">
+                    <img src="icda-africa/Images/oral health.jpg" alt="Oral health advocacy">
+                </div>
+                <div class="card-content">
+                    <h3>Oral Health Advocacy</h3>
+                    <p>Conducting periodical research in clinics and communities to address dental decay, gum disease, oral cancer and their connections to overall health.</p>
+                </div>
+            </div>
+
+            <div class="initiative-card fade-in-card" data-index="1">
+                <div class="card-image">
+                    <img src="icda-africa/Images/community outreach.jpg" alt="Community outreach">
+                </div>
+                <div class="card-content">
+                    <h3>Community Outreach</h3>
+                    <p>Free dental camps and oral health education programs in rural communities and remote areas across Africa.</p>
+                </div>
+            </div>
+
+            <div class="initiative-card fade-in-card" data-index="2">
+                <div class="card-image">
+                    <img src="icda-africa/Images/professional.jpg" alt="Professional training">
+                </div>
+                <div class="card-content">
+                    <h3>Professional Training</h3>
+                    <p>Capacity building and professional development for dental practitioners to enhance clinical excellence.</p>
+                </div>
+            </div>
+
+            <div class="initiative-card fade-in-card" data-index="3">
+                <div class="card-image">
+                    <img src="icda-africa/Images/public education.jpg" alt="Public Education">
+                </div>
+                <div class="card-content">
+                    <h3>Public Education</h3>
+                    <p>Empowering communities with knowledge and tools for better oral health through accessible education programs. School Oral Health Programs, Community Workshops, Multilingual Resources, and Digital Learning Platforms.</p>
+                </div>
+            </div>
+
+            <div class="initiative-card fade-in-card" data-index="4">
+                <div class="card-image">
+                    <img src="icda-africa/Images/conservative dentistry.jpg" alt="Conservative Dentistry">
+                </div>
+                <div class="card-content">
+                    <h3>Conservative Dentistry</h3>
+                    <p>Promoting minimally invasive approaches that preserve natural tooth structure and improve long-term oral health outcomes through preventive techniques, minimal intervention, early detection methods, and cost-effective solutions.</p>
+                </div>
+            </div>
+
+            <div class="initiative-card fade-in-card" data-index="5">
+                <div class="card-image">
+                    <img src="icda-africa/Images/community research.jpg" alt="Community Research">
+                </div>
+                <div class="card-content">
+                    <h3>Community Research</h3>
+                    <p>Bringing dental care and education directly to underserved communities through mobile dental clinics, rural health missions, corporate partnerships, and volunteer programs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Impact -->
+<section class="section fade-in-section" id="impact-section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Our Impact</h2>
+        <div class="impact-grid">
+            <div class="fade-in-card" data-index="0">
+                <h3>50+</h3>
+                <p>Communities Served</p>
+            </div>
+            <div class="fade-in-card" data-index="1">
+                <h3>12</h3>
+                <p>African Countries</p>
+            </div>
+            <div class="fade-in-card" data-index="2">
+                <h3>5K+</h3>
+                <p>People Reached</p>
+            </div>
+            <div class="fade-in-card" data-index="3">
+                <h3>25</h3>
+                <p>Research Projects</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 ICDA Africa. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="icda-africa/js/script.js"></script>
+<script src="icda-africa/js/animations.js"></script>
+
+<script>
+    // Home page fade-in scroll animations
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeHomeFadeAnimations();
+    });
+
+    function initializeHomeFadeAnimations() {
+        // Fade in main sections
+        const fadeSections = document.querySelectorAll('.fade-in-section');
+        
+        const sectionObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    sectionObserver.unobserve(entry.target);
+                }
+            });
+        }, sectionObserverOptions);
+
+        fadeSections.forEach(section => sectionObserver.observe(section));
+
+        // Fade in individual cards with staggered timing
+        const fadeCards = document.querySelectorAll('.fade-in-card');
+        
+        const cardObserverOptions = {
+            root: null,
+            rootMargin: '50px',
+            threshold: 0.1
+        };
+
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = parseInt(entry.target.dataset.index) || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, cardObserverOptions);
+
+        fadeCards.forEach(card => cardObserver.observe(card));
+    }
+</script>
+</body>
+</html>
