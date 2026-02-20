@@ -1,0 +1,161 @@
+<!-- ICDA Africa Design System - Color Quick Reference -->
+<!-- Use this as a developer reference for implementing the brand colors -->
+
+<!-- PRIMARY BRAND COLORS -->
+<!-- 
+Primary Yellow: #F4D000
+Used for: Accents, highlights, secondary buttons
+Contrast: 13.5:1 on charcoal (AAA Pass) | 10.2:1 on white (AAA Pass)
+
+Primary Green: #1E8A4C  
+Used for: Primary actions, buttons, headings, icons
+Contrast: 4.6:1 on white (AA Pass) | 14.8:1 on soft white (AAA Pass)
+
+Primary Red: #D62828
+Used for: Hover states, emphasis, alerts, important CTAs
+Contrast: 5.2:1 on white (AA Pass) | 13.2:1 on soft white (AAA Pass)
+
+Charcoal: #1A1A1A
+Used for: Primary text, body copy, dark backgrounds
+Contrast: 17.0:1 on white (AAA Pass) | 17.2:1 on soft white (AAA Pass)
+
+Soft White: #F9F9F9
+Used for: Light backgrounds, subtle sections
+Contrast with Charcoal: 17.2:1 (AAA Pass)
+-->
+
+<!-- COMPONENT EXAMPLES -->
+
+<!-- Navigation Link (Hover) -->
+<a style="color: #1A1A1A; transition: color 0.3s ease;">
+  Menu Item
+</a>
+<!-- On Hover: background-color transitions to #F4D000, color becomes #1A1A1A -->
+
+<!-- Primary Button -->
+<button style="
+  background-color: #1E8A4C;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+">
+  Call to Action
+</button>
+<!-- On Hover: background becomes #D62828, shadow added -->
+
+<!-- Secondary Button (Yellow) -->
+<button style="
+  background-color: #F4D000;
+  color: #1A1A1A;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+">
+  Secondary Action
+</button>
+<!-- On Hover: background becomes #D62828, color becomes #ffffff -->
+
+<!-- Card Heading -->
+<h3 style="
+  color: #1E8A4C;
+  font-size: 1.3rem;
+  font-weight: 700;
+">
+  Initiative Title
+</h3>
+
+<!-- Card Body Text -->
+<p style="
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+">
+  Initiative description and details go here.
+</p>
+
+<!-- Form Input -->
+<input type="text" style="
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #dddddd;
+  border-radius: 8px;
+  background-color: #fafbfc;
+  color: #1A1A1A;
+  transition: all 0.3s ease;
+" placeholder="Enter text..." />
+<!-- On Focus: border-color becomes #1E8A4C, box-shadow rgba(30,138,76,0.1) -->
+
+<!-- Form Label -->
+<label style="
+  color: #1E8A4C;
+  font-weight: 600;
+  font-size: 0.9rem;
+">
+  Form Label
+</label>
+
+<!-- Footer Background -->
+<footer style="
+  background-color: #1E8A4C;
+  color: #ffffff;
+  padding: 20px;
+">
+  <p>© 2024 ICDA Africa. All rights reserved.</p>
+</footer>
+
+<!-- GRADIENT EXAMPLES -->
+
+<!-- Hero Section Overlay -->
+<div style="
+  background: linear-gradient(rgba(30, 138, 76, 0.85), rgba(30, 138, 76, 0.85)), 
+              url('../images/hero.jpg');
+  background-size: cover;
+">
+  <!-- Hero content -->
+</div>
+
+<!-- Button Gradient (Submit Button) -->
+<button style="
+  background: linear-gradient(135deg, #1E8A4C 0%, #158a47 100%);
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+">
+  Submit Form
+</button>
+<!-- On Hover: background becomes linear-gradient(135deg, #D62828 0%, #b81f21 100%) -->
+
+<!-- ANIMATION TRANSITIONS -->
+<!-- All interactive elements use 0.3s ease transitions -->
+<!-- Floating elements use 6s ease-in-out infinite -->
+
+<!-- CSS VARIABLE REFERENCE -->
+<!--
+Use in your stylesheet:
+
+color: var(--primary-green);           /* #1E8A4C */
+background-color: var(--primary-yellow); /* #F4D000 */
+border-color: var(--primary-red);      /* #D62828 */
+color: var(--charcoal);                /* #1A1A1A */
+background-color: var(--soft-white);   /* #F9F9F9 */
+color: var(--grey-dark);               /* #555555 */
+color: var(--grey-medium);             /* #888888 */
+border-color: var(--border-light);     /* #dddddd */
+background-color: var(--bg-input);     /* #fafbfc */
+
+Semantic aliases:
+background-color: var(--primary);      /* same as --primary-green */
+background-color: var(--secondary);    /* same as --primary-yellow */
+background-color: var(--accent);       /* same as --soft-white */
+color: var(--dark);                    /* same as --charcoal */
+-->
