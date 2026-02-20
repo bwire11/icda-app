@@ -6,14 +6,476 @@
 <title>About - ICDA Africa</title>
 
 <!-- SEO Meta Tags -->
-<meta name="description" content="ICDA Africa is committed to improving oral health systems and expanding access to quality dental care services across Africa.">
-<meta name="keywords" content="ICDA Africa, Dental Outreach, Oral Health Africa, Dental NGO, Community Dental Programs">
-<meta name="author" content="ICDA Africa">
-<meta property="og:title" content="ICDA Africa">
-<meta property="og:description" content="Improving oral health across Africa through outreach and professional training.">
-<meta property="og:image" content="https://yourdomain.com/images/hero-home.jpg">
+<meta name="description" content="Indepth Community Dentistry Africa Ltd - a Private Not-for-Profit organization advancing oral health across Africa through professional excellence and community engagement.">
+<meta name="keywords" content="Indepth Dentistry Africa, ICDA, Oral Health Africa, Dental NGO, Community Dental Programs, Ubuntu in African Dentistry">
+<meta name="author" content="Indepth Community Dentistry Africa">
+<meta property="og:title" content="About Indepth Community Dentistry Africa">
+<meta property="og:description" content="Bridging the gap between the public and oral health workforce in Africa.">
+<meta property="og:image" content="images/hero-home.jpg">
 <meta property="og:type" content="website">
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="CSS/styles.css">
+
+<style>
+    /* About page specific animations */
+    .about-fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .about-fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .about-card-fade {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .about-card-fade.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+</style>
 </head>
 <body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container nav-container">
+        <img src="Images/logo.png" class="logo" alt="ICDA Logo">
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html">Home</a>
+            
+            <div class="nav-dropdown">
+                <a href="about.html">About Us</a>
+                <div class="dropdown-menu">
+                    <a href="about.html#history">Our History</a>
+                    <a href="about.html#pillars">Our Pillars</a>
+                    <a href="about.html#mission">Mission & Vision</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a href="work.html">Our Work</a>
+                <div class="dropdown-menu">
+                    <a href="work.html#advocacy">Our Health Advocacy</a>
+                    <a href="work.html#community">Community Outreach</a>
+                    <a href="work.html#clinical">Clinical Standards</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a href="resources.html">Resources</a>
+                <div class="dropdown-menu">
+                    <a href="resources.html#publications">Publications</a>
+                    <a href="resources.html#guidelines">Practice Guidelines</a>
+                </div>
+            </div>
+
+            <a href="blog.html">Blog & Vlog</a>
+            <a href="join.html" class="btn-secondary">Join</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="about-hero">
+    <div class="container about-hero-grid">
+        <div class="about-hero-content">
+            <h1>About Indepth Community Dentistry Africa</h1>
+            <h2 class="about-hero-subheadline">Ubuntu in African Dentistry</h2>
+            <p class="about-hero-intro">
+                We bridge the gap between the general public and oral health workforce in the promotion of oral health 
+                and conservative dentistry, and prevention of NCDs in Africa. Founded as a dental study group at Lubaga Hospital, 
+                we've grown into a dynamic Private Not-for-Profit organization dedicated to advancing dental excellence across the continent.
+            </p>
+        </div>
+        <div class="about-hero-image">
+            <img src="Images/hero-about.jpg" alt="Dental care in Africa">
+        </div>
+    </div>
+</section>
+
+<!-- History & Location Section -->
+<section class="about-section about-history" id="history">
+    <div class="container">
+        <h2>Our Foundation & Presence</h2>
+        <div class="about-history-grid">
+            <div class="about-history-card about-card-fade" data-index="0">
+                <div class="about-card-icon">📅</div>
+                <h3>Founded</h3>
+                <p><strong>August 2021</strong></p>
+                <p class="about-card-desc">Established with a vision to transform oral health across Africa</p>
+            </div>
+
+            <div class="about-history-card about-card-fade" data-index="1">
+                <div class="about-card-icon">🏥</div>
+                <h3>Origin</h3>
+                <p><strong>Lubaga Hospital, Kampala</strong></p>
+                <p class="about-card-desc">Started as a dedicated dental study group focused on clinical excellence</p>
+            </div>
+
+            <div class="about-history-card about-card-fade" data-index="2">
+                <div class="about-card-icon">📍</div>
+                <h3>Head Office</h3>
+                <p><strong>Paragon Hospital, Bugolobi</strong></p>
+                <p class="about-card-desc">Open Dental Care - Luthuli Avenue, Kampala, Uganda</p>
+            </div>
+
+            <div class="about-history-card about-card-fade" data-index="3">
+                <div class="about-card-icon">🏛️</div>
+                <h3>Registration</h3>
+                <p><strong>Private Not-for-Profit (PNFP)</strong></p>
+                <p class="about-card-desc">Registered as a charitable organization serving the public good</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Pillars Section -->
+<section class="about-section about-pillars-bg" id="pillars">
+    <div class="container">
+        <h2>Our Core Pillars</h2>
+        <p class="section-subtitle">The five foundational values guiding our mission</p>
+        
+        <div class="about-pillars-grid">
+            <div class="about-pillar-card about-card-fade" data-index="0">
+                <div class="about-pillar-icon">✓</div>
+                <h3>Transparency & Accountability</h3>
+                <p>We operate with integrity and openness, ensuring every action serves our mission and benefits the communities we work with.</p>
+            </div>
+
+            <div class="about-pillar-card about-card-fade" data-index="1">
+                <div class="about-pillar-icon">💚</div>
+                <h3>Selflessness & Compassion</h3>
+                <p>Driven by genuine care for human dignity and wellbeing, we prioritize service to others above self-interest.</p>
+            </div>
+
+            <div class="about-pillar-card about-card-fade" data-index="2">
+                <div class="about-pillar-icon">🛡️</div>
+                <h3>Human Rights & Environmental Protection</h3>
+                <p>We champion universal human rights and sustainable practices that protect both people and our planet.</p>
+            </div>
+
+            <div class="about-pillar-card about-card-fade" data-index="3">
+                <div class="about-pillar-icon">🌍</div>
+                <h3>Patriotism & Pan-Africanism</h3>
+                <p>United by continental pride, we work to strengthen African leadership and capacity in oral health systems.</p>
+            </div>
+
+            <div class="about-pillar-card about-card-fade" data-index="4">
+                <div class="about-pillar-icon">👥</div>
+                <h3>Leadership & Teamwork</h3>
+                <p>We foster collaborative excellence where diverse talents unite toward shared goals and professional growth.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="about-section about-mission-vision" id="mission">
+    <div class="container">
+        <div class="about-mission-vision-grid">
+            <div class="about-mv-card mission-card about-fade-in">
+                <div class="about-mv-accent"></div>
+                <div class="about-mv-content">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To bridge the gap between the general public and oral health workforce in the promotion of oral health 
+                        and conservative dentistry, and prevention of NCDs in Africa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-mv-card vision-card about-fade-in">
+                <div class="about-mv-accent"></div>
+                <div class="about-mv-content">
+                    <h3>Our Vision</h3>
+                    <p>
+                        A global organisation that spearheads oral and general health promotion and integration, 
+                        and the advancement of the practice of dentistry in Africa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Initiatives Section -->
+<section class="about-section about-initiatives" id="initiatives">
+    <div class="container">
+        <h2>Our Strategic Initiatives</h2>
+        <p class="section-subtitle">Transforming oral health through purposeful action</p>
+        
+        <div class="about-initiatives-grid">
+            <div class="about-init-card about-card-fade" data-index="0">
+                <div class="about-init-number">01</div>
+                <h3>Continuous Professional Development</h3>
+                <p>
+                    Comprehensive programs for dental students and professionals in leadership and clinical dental practice. 
+                    Empowering the next generation of African dental leaders.
+                </p>
+            </div>
+
+            <div class="about-init-card about-card-fade" data-index="1">
+                <div class="about-init-number">02</div>
+                <h3>African Dental Congress</h3>
+                <p>
+                    A pan-African unity body bringing together African dental students and professionals for joint promotion 
+                    of oral health and dentistry across the continent.
+                </p>
+            </div>
+
+            <div class="about-init-card about-card-fade" data-index="2">
+                <div class="about-init-number">03</div>
+                <h3>SMISSA Dental Society</h3>
+                <p>
+                    School dental health clubs in St. Michael Secondary School, Soroti City, Eastern Uganda. The first of its kind 
+                    in the country, fostering early awareness among young people.
+                </p>
+            </div>
+
+            <div class="about-init-card about-card-fade" data-index="3">
+                <div class="about-init-number">04</div>
+                <h3>Community Outreach Programs</h3>
+                <p>
+                    Oral health awareness campaigns in schools and places of worship. Reached 2,000+ African dental students and 
+                    1,200+ practitioners across 16 African countries. In Uganda, covered 8 districts of Teso reaching 3,000 school children. 
+                    Currently targeting 75,000+ people annually in Busia district, focusing on women of reproductive age and children.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-initiatives-impact about-fade-in">
+            <div class="about-impact-stat">
+                <h4>2,000+</h4>
+                <p>Dental Students Reached</p>
+            </div>
+            <div class="about-impact-stat">
+                <h4>1,200+</h4>
+                <p>Dental Practitioners Engaged</p>
+            </div>
+            <div class="about-impact-stat">
+                <h4>16</h4>
+                <p>African Countries</p>
+            </div>
+            <div class="about-impact-stat">
+                <h4>75,000+</h4>
+                <p>Annual Target Impact</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Organisational Objectives Section -->
+<section class="about-section about-objectives">
+    <div class="container">
+        <h2>Our Organisational Objectives</h2>
+        <p class="section-subtitle">Strategic priorities that drive our work</p>
+        
+        <div class="about-objectives-grid">
+            <div class="about-obj-card about-card-fade" data-index="0">
+                <div class="about-obj-number">01</div>
+                <h3>Foster Unity Among Dental Professionals</h3>
+                <p>Create a collaborative network where dental professionals across Africa unite, share knowledge, and elevate clinical standards.</p>
+            </div>
+
+            <div class="about-obj-card about-card-fade" data-index="1">
+                <div class="about-obj-number">02</div>
+                <h3>Promote Oral Health Awareness</h3>
+                <p>Advance conservative dentistry through education and community engagement, building public understanding of oral health importance.</p>
+            </div>
+
+            <div class="about-obj-card about-card-fade" data-index="2">
+                <div class="about-obj-number">03</div>
+                <h3>Advocate for Clinical Standards</h3>
+                <p>Establish and promote universally accepted clinical standards, ensuring quality, safety, and consistency in dental practice across the continent.</p>
+            </div>
+
+            <div class="about-obj-card about-card-fade" data-index="3">
+                <div class="about-obj-number">04</div>
+                <h3>Conduct Periodical Research</h3>
+                <p>Undertake evidence-based research in clinics and communities to inform best practices and drive continuous improvement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Health Context & Disease Focus Section -->
+<section class="about-section about-health-context">
+    <div class="container">
+        <h2>Health Integration & Focus Areas</h2>
+        
+        <div class="about-health-intro about-fade-in">
+            <div class="about-health-definition">
+                <h3>Why Health Integration Matters</h3>
+                <p>
+                    <strong>Health</strong> is defined as a state of complete physical, mental, and social wellbeing—not merely the absence of disease. 
+                    <strong>Oral health</strong> is an integral component of overall health that influences nutrition, communication, and quality of life.
+                </p>
+            </div>
+            <div class="about-health-context-info">
+                <p>
+                    Globally, <strong>3.5 billion people</strong> suffer from oral diseases. Poor oral health is linked to serious conditions including 
+                    diabetes, heart disease, and respiratory illness. Our focus is to strengthen oral health systems while promoting integrated NCD prevention.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-disease-panels">
+            <div class="about-disease-panel about-fade-in">
+                <h3 class="about-panel-title">🦷 Oral Diseases of Focus</h3>
+                <div class="about-disease-list">
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Untreated Dental Decay</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Gum Disease & Periodontitis</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Head & Neck Injuries</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Oral Signs of HIV/AIDS</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Oral Cancer</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Cleft Lip & Palate</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Major Malocclusions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-disease-panel about-fade-in">
+                <h3 class="about-panel-title">🏥 Associated Non-Communicable Diseases</h3>
+                <div class="about-disease-list">
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Diabetes Mellitus Type 2</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Chronic Respiratory Diseases</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Heart Diseases & Cardiovascular Conditions</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Alcohol Abuse Disorders</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Mental Health Conditions</span>
+                    </div>
+                    <div class="about-disease-item">
+                        <span class="about-disease-icon">•</span>
+                        <span>Preventable Cancers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="about-cta-section">
+    <div class="container">
+        <h2>Join Us in Transforming Oral Health in Africa</h2>
+        <p>Be part of a movement dedicated to advancing professional excellence and community wellbeing across the continent.</p>
+        
+        <div class="about-cta-buttons">
+            <a href="join.html" class="btn-cta-primary">Join the Movement</a>
+            <a href="donate.html" class="btn-cta-secondary">Support Our Work</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Indepth Community Dentistry Africa Ltd. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="JS/script.js"></script>
+<script src="JS/animations.js"></script>
+
+<script>
+    // About page scroll animations
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeAboutPageAnimations();
+    });
+
+    function initializeAboutPageAnimations() {
+        // Fade in main content sections
+        const fadeSections = document.querySelectorAll('.about-fade-in');
+        
+        const sectionObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    sectionObserver.unobserve(entry.target);
+                }
+            });
+        }, sectionObserverOptions);
+
+        fadeSections.forEach(section => sectionObserver.observe(section));
+
+        // Fade in cards with staggered timing
+        const fadeCards = document.querySelectorAll('.about-card-fade');
+        
+        const cardObserverOptions = {
+            root: null,
+            rootMargin: '50px',
+            threshold: 0.1
+        };
+
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = parseInt(entry.target.dataset.index) || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 80);
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, cardObserverOptions);
+
+        fadeCards.forEach(card => cardObserver.observe(card));
+    }
+</script>
+
+</body>
+</html>
