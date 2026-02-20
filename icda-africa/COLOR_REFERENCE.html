@@ -27,15 +27,15 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 <!-- COMPONENT EXAMPLES -->
 
 <!-- Navigation Link (Hover) -->
-<a style="color: #1A1A1A; transition: color 0.3s ease;">
+<a style="color: var(--charcoal); transition: color 0.3s ease;">
   Menu Item
 </a>
-<!-- On Hover: background-color transitions to #F4D000, color becomes #1A1A1A -->
+<!-- On Hover: background-color transitions to var(--primary-yellow), color becomes var(--charcoal) -->
 
 <!-- Primary Button -->
 <button style="
-  background-color: #1E8A4C;
-  color: #ffffff;
+  background-color: var(--primary-green);
+  color: var(--soft-white);
   border: none;
   padding: 12px 20px;
   border-radius: 5px;
@@ -45,12 +45,12 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 ">
   Call to Action
 </button>
-<!-- On Hover: background becomes #D62828, shadow added -->
+<!-- On Hover: background becomes var(--primary-red), shadow added -->
 
 <!-- Secondary Button (Yellow) -->
 <button style="
-  background-color: #F4D000;
-  color: #1A1A1A;
+  background-color: var(--primary-yellow);
+  color: var(--charcoal);
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
@@ -60,11 +60,11 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 ">
   Secondary Action
 </button>
-<!-- On Hover: background becomes #D62828, color becomes #ffffff -->
+<!-- On Hover: background becomes var(--primary-red), color becomes var(--soft-white) -->
 
 <!-- Card Heading -->
 <h3 style="
-  color: #1E8A4C;
+  color: var(--primary-green);
   font-size: 1.3rem;
   font-weight: 700;
 ">
@@ -73,7 +73,7 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 
 <!-- Card Body Text -->
 <p style="
-  color: #555555;
+  color: var(--grey-dark);
   font-size: 0.95rem;
   line-height: 1.6;
 ">
@@ -84,17 +84,17 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 <input type="text" style="
   width: 100%;
   padding: 14px 16px;
-  border: 1.5px solid #dddddd;
+  border: 1.5px solid var(--border-light);
   border-radius: 8px;
-  background-color: #fafbfc;
-  color: #1A1A1A;
+  background-color: var(--bg-input);
+  color: var(--charcoal);
   transition: all 0.3s ease;
 " placeholder="Enter text..." />
-<!-- On Focus: border-color becomes #1E8A4C, box-shadow rgba(30,138,76,0.1) -->
+<!-- On Focus: border-color becomes var(--primary-green), box-shadow rgba(30,138,76,0.1) -->
 
 <!-- Form Label -->
 <label style="
-  color: #1E8A4C;
+  color: var(--primary-green);
   font-weight: 600;
   font-size: 0.9rem;
 ">
@@ -103,8 +103,8 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 
 <!-- Footer Background -->
 <footer style="
-  background-color: #1E8A4C;
-  color: #ffffff;
+  background-color: var(--primary-green);
+  color: var(--soft-white);
   padding: 20px;
 ">
   <p>© 2024 ICDA Africa. All rights reserved.</p>
@@ -123,8 +123,8 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 
 <!-- Button Gradient (Submit Button) -->
 <button style="
-  background: linear-gradient(135deg, #1E8A4C 0%, #158a47 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--green-dark) 100%);
+  color: var(--soft-white);
   padding: 15px;
   border: none;
   border-radius: 8px;
@@ -133,7 +133,7 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 ">
   Submit Form
 </button>
-<!-- On Hover: background becomes linear-gradient(135deg, #D62828 0%, #b81f21 100%) -->
+<!-- On Hover: background becomes linear-gradient(135deg, var(--primary-red) 0%, var(--red-dark) 100%) -->
 
 <!-- ANIMATION TRANSITIONS -->
 <!-- All interactive elements use 0.3s ease transitions -->

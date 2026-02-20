@@ -35,7 +35,6 @@
                     <a href="about.html#history">Our History</a>
                     <a href="about.html#pillars">Our Pillars</a>
                     <a href="about.html#mission">Mission & Vision</a>
-                    <a href="about.html#initiatives">Our Initiatives</a>
                 </div>
             </div>
 
@@ -179,38 +178,6 @@
     </div>
 </section>
 
-<!-- INITIATIVES SECTION -->
-<section class="about-section initiatives-section" id="initiatives">
-    <div class="container">
-        <h2>Our Initiatives</h2>
-        <div class="initiatives-grid">
-            <div class="initiative-card fade-in-card" data-index="0">
-                <div class="init-icon">🎓</div>
-                <h3>Professional Development</h3>
-                <p>Continuous professional development programs for dental students and professionals in leadership and clinical dental practice.</p>
-            </div>
-
-            <div class="initiative-card fade-in-card" data-index="1">
-                <div class="init-icon">🌍</div>
-                <h3>African Dental Congress</h3>
-                <p>Pan-African unity body for African dental students and professionals. For joint promotion of oral health and dentistry across the continent.</p>
-            </div>
-
-            <div class="initiative-card fade-in-card" data-index="2">
-                <div class="init-icon">🏫</div>
-                <h3>SMISSA Dental Society</h3>
-                <p>School dental health clubs in St. Michael Secondary School, Soroti city, Eastern Uganda. First of its kind in the country.</p>
-            </div>
-
-            <div class="initiative-card fade-in-card" data-index="3">
-                <div class="init-icon">🦷</div>
-                <h3>Community Outreach Programs</h3>
-                <p>Oral health awareness in schools and places of worship. Reached over 2000 African dental students and 1200+ practitioners in 16 countries across Western, Eastern, and Southern Africa. In Uganda, covered 8 districts of Teso (3000 children). Currently expanding to Busia district targeting 75,000+ people annually.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- ORGANISATIONAL OBJECTIVES SECTION -->
 <section class="about-section objectives-section">
     <div class="container">
@@ -320,12 +287,6 @@
         // Observe fade-in elements
         document.querySelectorAll('.fade-in-section, .fade-in-card').forEach(el => {
             observer.observe(el);
-        });
-
-        // Stagger card animations
-        document.querySelectorAll('[data-index]').forEach(el => {
-            const index = parseInt(el.dataset.index) || 0;
-            el.style.transitionDelay = (index * 80) + 'ms';
         });
     });
 </script>
