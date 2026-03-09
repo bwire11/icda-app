@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us | ICDA Africa</title>
+    <title>Join Us | In-depthDentitry Africa</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Join our movement to improve oral health across Africa. Whether you're a dental professional, volunteer, supporter, or advocate, there are multiple ways to contribute.">
-    <meta name="keywords" content="ICDA Africa, Join Us, Dental Volunteers, Healthcare Advocacy, Oral Health Programs">
-    <meta name="author" content="ICDA Africa">
-    <meta property="og:title" content="Join Us | ICDA Africa">
+    <meta name="keywords" content="In-depthDentitry Africa, Join Us, Dental Volunteers, Healthcare Advocacy, Oral Health Programs">
+    <meta name="author" content="In-depthDentitry Africa">
+    <meta property="og:title" content="Join Us | In-depthDentitry Africa">
     <meta property="og:description" content="Join our movement to improve oral health across Africa through outreach and professional training.">
     <meta property="og:image" content="Images/hero-join.jpg">
     <meta property="og:type" content="website">
@@ -18,45 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/styles.css">
-    <style>
-        /* Fade-in scroll animations */
-        .fade-in-element,
-        .fade-in-item {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-
-        .fade-in-element.visible,
-        .fade-in-item.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Floating background icons */
-        .floating-bg-icons {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        .float-icon {
-            position: absolute;
-            font-size: 60px;
-            opacity: 0.08;
-            animation: floatBg 8s ease-in-out infinite;
-        }
-
-        @keyframes floatBg {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(10deg); }
-        }
-    </style>
 </head>
 <body>
 
@@ -104,17 +65,17 @@
 </header>
 
 <!-- Page Hero -->
-<section class="page-hero" style="background-image: url('Images/hero-join.jpg');">
+<section class="page-hero page-hero--join">
     <h1>Join Our Movement</h1>
 </section>
 
 <!-- Floating Background Icons -->
 <div class="floating-bg-icons">
-    <div class="float-icon" style="top: 10%; left: 5%; animation-delay: 0s;">🦷</div>
-    <div class="float-icon" style="top: 20%; right: 8%; animation-delay: 1s;">💚</div>
-    <div class="float-icon" style="top: 60%; left: 3%; animation-delay: 2s;">🏥</div>
-    <div class="float-icon" style="top: 70%; right: 5%; animation-delay: 1.5s;">✨</div>
-    <div class="float-icon" style="top: 40%; left: 8%; animation-delay: 2.5s;">👥</div>
+    <div class="float-icon float-icon--1">🦷</div>
+    <div class="float-icon float-icon--2">💚</div>
+    <div class="float-icon float-icon--3">🏥</div>
+    <div class="float-icon float-icon--4">✨</div>
+    <div class="float-icon float-icon--5">👥</div>
 </div>
 
 <!-- Join Section -->
@@ -214,15 +175,12 @@
 <footer class="footer">
     <div class="container">
         <p>&copy; 2026 In-depth Dentistry Africa. All rights reserved. Transforming Oral Health Across Africa.</p>
-        <div class="footer-links">
-            <a href="#privacy">Privacy Policy</a> | 
-            <a href="#terms">Terms of Service</a> | 
-            <a href="contact.html">Contact Us</a>
-        </div>
+        <div class="footer-links" data-include="footer-links"></div>
     </div>
 </footer>
 
 <script src="JS/script.js"></script>
+<script src="JS/footerLinks.js"></script>
 <script>
     // Join page form handling and animations
     document.addEventListener('DOMContentLoaded', function() {

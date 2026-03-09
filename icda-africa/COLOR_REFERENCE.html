@@ -27,110 +27,56 @@ Contrast with Charcoal: 17.2:1 (AAA Pass)
 <!-- COMPONENT EXAMPLES -->
 
 <!-- Navigation Link (Hover) -->
-<a style="color: var(--charcoal); transition: color 0.3s ease;">
+<a class="demo-nav-link">
   Menu Item
 </a>
 <!-- On Hover: background-color transitions to var(--primary-yellow), color becomes var(--charcoal) -->
 
 <!-- Primary Button -->
-<button style="
-  background-color: var(--primary-green);
-  color: var(--soft-white);
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  cursor: pointer;
-">
+<button class="demo-btn demo-btn--primary">
   Call to Action
 </button>
 <!-- On Hover: background becomes var(--primary-red), shadow added -->
 
 <!-- Secondary Button (Yellow) -->
-<button style="
-  background-color: var(--primary-yellow);
-  color: var(--charcoal);
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  cursor: pointer;
-">
+<button class="demo-btn demo-btn--secondary">
   Secondary Action
 </button>
 <!-- On Hover: background becomes var(--primary-red), color becomes var(--soft-white) -->
 
 <!-- Card Heading -->
-<h3 style="
-  color: var(--primary-green);
-  font-size: 1.3rem;
-  font-weight: 700;
-">
+<h3 class="demo-card-heading">
   Initiative Title
 </h3>
 
 <!-- Card Body Text -->
-<p style="
-  color: var(--grey-dark);
-  font-size: 0.95rem;
-  line-height: 1.6;
-">
+<p class="demo-card-text">
   Initiative description and details go here.
 </p>
 
 <!-- Form Input -->
-<input type="text" style="
-  width: 100%;
-  padding: 14px 16px;
-  border: 1.5px solid var(--border-light);
-  border-radius: 8px;
-  background-color: var(--bg-input);
-  color: var(--charcoal);
-  transition: all 0.3s ease;
-" placeholder="Enter text..." />
+<input type="text" class="demo-input" placeholder="Enter text..." />
 <!-- On Focus: border-color becomes var(--primary-green), box-shadow rgba(30,138,76,0.1) -->
 
 <!-- Form Label -->
-<label style="
-  color: var(--primary-green);
-  font-weight: 600;
-  font-size: 0.9rem;
-">
+<label class="demo-label">
   Form Label
 </label>
 
 <!-- Footer Background -->
-<footer style="
-  background-color: var(--primary-green);
-  color: var(--soft-white);
-  padding: 20px;
-">
+<footer class="demo-footer">
   <p>© 2024 ICDA Africa. All rights reserved.</p>
 </footer>
 
 <!-- GRADIENT EXAMPLES -->
 
 <!-- Hero Section Overlay -->
-<div style="
-  background: linear-gradient(rgba(30, 138, 76, 0.85), rgba(30, 138, 76, 0.85)), 
-              url('../images/hero.jpg');
-  background-size: cover;
-">
+<div class="demo-hero-overlay">
   <!-- Hero content -->
 </div>
 
 <!-- Button Gradient (Submit Button) -->
-<button style="
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--green-dark) 100%);
-  color: var(--soft-white);
-  padding: 15px;
-  border: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-">
+<button class="demo-gradient-btn">
   Submit Form
 </button>
 <!-- On Hover: background becomes linear-gradient(135deg, var(--primary-red) 0%, var(--red-dark) 100%) -->

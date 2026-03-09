@@ -550,6 +550,27 @@ h1, h2, h3 {
     font-size: 2.5rem;
 }
 
+/* Page Hero background variants */
+.page-hero--home {
+    background-image: url('../Images/hero-home.jpg');
+}
+
+.page-hero--contact {
+    background-image: url('../Images/hero-contact.jpg');
+}
+
+.page-hero--blog {
+    background-image: url('../Images/hero-blog.jpg');
+}
+
+.page-hero--join {
+    background-image: url('../Images/hero-join.jpg');
+}
+
+.page-hero--donate {
+    background-image: url('../Images/hero-donate.jpg');
+}
+
 /* Initiatives Grid - 3 Column Layout */
 .initiatives-grid {
     display: grid;
@@ -1067,6 +1088,60 @@ h1, h2, h3 {
     }
 }
 
+/* Floating background icon helpers */
+.floating-bg-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.float-icon {
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.08;
+    animation: floatBg 8s ease-in-out infinite;
+}
+
+.float-icon--1 {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.float-icon--2 {
+    top: 20%;
+    right: 8%;
+    animation-delay: 1s;
+}
+
+.float-icon--3 {
+    top: 60%;
+    left: 3%;
+    animation-delay: 2s;
+}
+
+.float-icon--4 {
+    top: 70%;
+    right: 5%;
+    animation-delay: 1.5s;
+}
+
+.float-icon--5 {
+    top: 40%;
+    left: 8%;
+    animation-delay: 2.5s;
+}
+
+@keyframes floatBg {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(10deg); }
+}
+
 /* ========== ABOUT PAGE STYLES ========== */
 
 /* About Hero Section */
@@ -1075,6 +1150,95 @@ h1, h2, h3 {
     padding: 100px 0;
     position: relative;
     overflow: hidden;
+}
+
+.about-section-title {
+    margin-bottom: 24px;
+}
+
+/* Demo / reference helpers */
+.demo-nav-link {
+    color: var(--charcoal);
+    transition: color 0.3s ease;
+}
+
+.demo-btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.demo-btn--primary {
+    background-color: var(--primary-green);
+    color: var(--soft-white);
+}
+
+.demo-btn--secondary {
+    background-color: var(--primary-yellow);
+    color: var(--charcoal);
+}
+
+.demo-card-heading {
+    color: var(--primary-green);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.demo-card-text {
+    color: var(--grey-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.demo-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid var(--border-light);
+    border-radius: 8px;
+    background-color: var(--bg-input);
+    color: var(--charcoal);
+    transition: all 0.3s ease;
+}
+
+.demo-input:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(30, 138, 76, 0.1);
+    outline: none;
+}
+
+.demo-label {
+    color: var(--primary-green);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.demo-footer {
+    background-color: var(--primary-green);
+    color: var(--soft-white);
+    padding: 20px;
+}
+
+.demo-hero-overlay {
+    background: linear-gradient(rgba(30, 138, 76, 0.85), rgba(30, 138, 76, 0.85)),
+        url('../images/hero.jpg');
+    background-size: cover;
+}
+
+.demo-gradient-btn {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green) 100%);
+    color: var(--soft-white);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.demo-gradient-btn:hover {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red) 100%);
 }
 
 .about-hero-content {

@@ -20,13 +20,18 @@ export default async function handler(req, res) {
     }
   });
 
+  // Fallback to a known contact email if EMAIL_USER is not set
+  const destinationEmail = process.env.EMAIL_USER || "hesyra.healthhub@gmail.com";
+  const sourceEmail = process.env.EMAIL_USER || destinationEmail;
+
   try {
     await transporter.sendMail({
-      from: email,
-      to: process.env.EMAIL_USER,
-      subject: subject || `New Join Request from ${name}`,
+      from: sourceEmail,
+      replyTo: email,
+      to: destinationEmail,
+      subject: subject || `New message from ${name}`,
       html: `
-        <h2>New Join Request</h2>
+        <h2>New Message from Website</h2>
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         ${helpType ? `<p><strong>Interest:</strong> ${escapeHtml(helpType)}</p>` : ''}
@@ -34,18 +39,18 @@ export default async function handler(req, res) {
         <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
       `,
       text: `
-        New Join Request
+        New Message from Website
 
         Name: ${name}
         Email: ${email}
         ${helpType ? `Interest: ${helpType}` : ''}
-        
+
         Message:
         ${message}
       `
     });
 
-    res.status(200).json({ success: true, message: "Thank you for joining us!" });
+    res.status(200).json({ success: true, message: "Thank you for reaching out!" });
 
   } catch (error) {
     console.error('Email sending error:', error);

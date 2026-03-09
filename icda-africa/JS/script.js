@@ -3,7 +3,7 @@ function toggleMenu() {
     nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 }
 
-// Handle donation button - connects to Vercel backend checkout endpoint
+/* // Handle donation button - connects to Vercel backend checkout endpoint
 document.addEventListener('DOMContentLoaded', function() {
     const donateBtn = document.querySelector(".btn-primary");
     if (donateBtn) {
@@ -43,7 +43,7 @@ async function handleDonation() {
         console.error('Donation error:', error);
         alert('Connection error. Please try again later.');
     }
-}
+} */
 
 // Hero enhancements: count-up, parallax, reveal
 (function () {
